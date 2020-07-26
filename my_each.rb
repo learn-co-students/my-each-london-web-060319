@@ -1,3 +1,9 @@
-def my_each # put argument(s) here
+def my_each(codes) # put argument(s) here
   # code here
-end
+  i = 0
+  while i < codes.length
+    yield(codes[i])
+  i = i + 1
+  end
+  codes
+end   
